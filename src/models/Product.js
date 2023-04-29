@@ -12,7 +12,7 @@ const Schema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    productName: {
+    productQuantity: {
         type: String,
         required: true
     },
@@ -21,7 +21,8 @@ const Schema = new mongoose.Schema({
     },
     username: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
+        requided: true
     }
 })
 
